@@ -1,11 +1,8 @@
 import requests
-import difflib
 import dotenv
 import base64
 import os
-import re
-
-checkSimilarity = lambda original, match: difflib.SequenceMatcher(None, original, match).ratio()
+import r
 
 def processBadStrings(s):
     badStrings = "(Audio)|(Official Lyric Video)|(Official Music Video)|(Lyrics)|(Official Audio)"
